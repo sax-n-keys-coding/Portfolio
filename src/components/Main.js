@@ -104,7 +104,7 @@ align-items: center;
 transition: all 1s ease;
 
 &>:first-child{
-    animation: ${rotate} infinite 1.5s linear;
+    animation: ${rotate} infinite 3s linear;
 }
 
 &>:last-child{
@@ -142,10 +142,9 @@ const Main = () => {
            
             <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span>click here</span>
             </Center>
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
+            <Contact target="_blank" to={{pathname:"mailto:mishalubich007@berkeley.edu"}}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -162,7 +161,7 @@ const Main = () => {
                     Say hi..
                 </motion.h2>
             </Contact>
-            <BLOG to="/blog">
+            {/* <BLOG to="/blog">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -177,8 +176,8 @@ const Main = () => {
                 >
                     Blog
                 </motion.h2>
-            </BLOG>
-            <WORK to="/work" click={+click}>
+            </BLOG> */}
+            {/* <WORK to="/work" click={+click}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -193,7 +192,7 @@ const Main = () => {
                 >
                     Work
                 </motion.h2>
-            </WORK>
+            </WORK> */}
             <BottomBar>
             <ABOUT to="/about" click={+click}>
                 <motion.h2

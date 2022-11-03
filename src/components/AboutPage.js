@@ -39,7 +39,7 @@ const Main =  styled.div`
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
-  height: 60vh;
+  height: 65vh;
   z-index: 3;
   line-height: 1.5;
   display: flex;
@@ -72,11 +72,11 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
+        I'm a motivated Senior studying computer science at UC Berkeley, and I'm seeking a full-time position or internship in a related role starting from January 2023.
+
+As a fourth-year, I have taken a wide variety of courses: Computer Security, Algorithms, Data Structures, Computer Architecture, Intro to AI, Operating Systems, Internet Architecture, and Machine Learning, among others.
 <br /> <br/>
-I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-<br/> <br/>
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+Coming from an immigrant background, I got little exposure to tech. My friends told me that CS would be too difficult for me — I proved them wrong. It was my fellow classmates who helped me become the confident problem-solver I am today. I’ve been trying to give back by helping students from diverse backgrounds. I hope to share high-fives as code tests pass at work too!<br/>
         </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />

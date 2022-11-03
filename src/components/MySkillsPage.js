@@ -18,8 +18,6 @@ position: relative;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-
-
 `
 
 const Main = styled.div`
@@ -91,13 +89,39 @@ const MySkillsPage = () => {
 <SocialIcons theme='light'/>
 <PowerButton />
 <ParticleComponent theme='light' />
+            
             <Main>
 <Title>
-    <Design width={40} height={40} /> Designer
+    <Develope width={40} height={40}/> Software Engineer
 </Title>
 <Description>
-I love to create design which speaks, Keep it clean, minimal and simple.
+I am experienced in a wide range of CS areas, from security, data sructures & algorithms to optimization and even ML!
 </Description>
+<Description>
+<strong>Skills</strong>
+<li>
+Python, Java, C/C++, HTML, CSS, Js
+</li>
+<li>
+React, Sass, Bootstrap, Tailwind
+</li>
+<li>
+Spring Boot etc.
+</li>
+</Description>
+<Description>
+<strong>Tools</strong>
+<li>
+VScode, Github, Codepen etc.
+</li>
+</Description>
+            </Main>
+            <Main>
+<Title>
+    <Design width={40} height={40}/> Designer
+</Title>
+<Description>
+I also worked with UI/UX at Walmart, building a modern data dashboard to save 1500 hours and ~$3,000,000 annually.</Description>
 <Description>
 <strong>I like to Design</strong>
 <ul>
@@ -117,27 +141,6 @@ I love to create design which speaks, Keep it clean, minimal and simple.
     </li>
     
 </ul>
-</Description>
-
-            </Main>
-            <Main>
-<Title>
-    <Develope width={40} height={40} /> Frontend Developer
-</Title>
-<Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
-<strong>Skills</strong>
-<p>
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
-</p>
-</Description>
-<Description>
-<strong>Tools</strong>
-<p>
-VScode, Github, Codepen etc.
-</p>
 </Description>
 
             </Main>
