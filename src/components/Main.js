@@ -7,6 +7,7 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
 import Intro from './Intro'
+import spinner from '../assets/gif/spinner.gif'
 ;
 
 
@@ -80,17 +81,17 @@ z-index:1;
 
 const rotate = keyframes`
 from{
-    transform: rotate(0);
+    transform: rotate(0deg);
 }
-to{
+from{
     transform: rotate(360deg);
 }
 `
 
 const Center = styled.button`
 position: absolute;
-top: ${props => props.click ? '85%' :'50%'  };
-left: ${props => props.click ? '92%' :'50%'  };
+top: ${props => props.click ? '0%' :'50%'  };
+left: ${props => props.click ? '0%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
 outline: none;
@@ -104,7 +105,7 @@ align-items: center;
 transition: all 1s ease;
 
 &>:first-child{
-    animation: ${rotate} infinite 1.5s linear;
+    // animation: ${rotate} infinite 1.5s linear;
 }
 
 &>:last-child{
@@ -125,7 +126,6 @@ z-index:1;
 transition: height 0.5s ease, width 1s ease 0.5s;
 `
 
-
 const Main = () => {
 
     const [click, setClick] = useState(false);
@@ -139,11 +139,14 @@ const Main = () => {
             <PowerButton />
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
-           
+
+
             <Center click={click}>
-                <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span>click here</span>
+                <img onClick={()=> handleClick()} width={click ? 300 : 1700} height={click ? 250 : 1100} src={spinner}></img>
+                {/* <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' /> */}
+                <h1> </h1> {/* required for spinner to go bottom right corner*/}
             </Center>
+
 
             <Contact target="_blank" to={{pathname:"mailto:mishalubich007@berkeley.edu"}}>
                 <motion.h2
@@ -162,7 +165,7 @@ const Main = () => {
                     Say hi..
                 </motion.h2>
             </Contact>
-            <BLOG to="/blog">
+            {/* <BLOG to="/blog">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -193,7 +196,7 @@ const Main = () => {
                 >
                     Work
                 </motion.h2>
-            </WORK>
+            </WORK> */}
             <BottomBar>
             <ABOUT to="/about" click={+click}>
                 <motion.h2
